@@ -20,7 +20,7 @@ class ProductController extends Controller
         return view('products.index',compact('products'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-  
+
     /**
      * Show the form for creating a new resource.
      */
